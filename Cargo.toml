@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/aws-iot-securetunneling-localproxy",
+    "crates/aws-iot-securetunneling-localproxy-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["David Oguns <davidoguns@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/davidoguns/aws-iot-securetunneling-localproxy-rs"
+readme = "README.md"
+
+[workspace.dependencies]
+aws-iot-securetunneling-localproxy = { path = "crates/aws-iot-securetunneling-localproxy" }
