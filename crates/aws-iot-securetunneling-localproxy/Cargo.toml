@@ -1,0 +1,10 @@
+[package]
+name = "aws-iot-securetunneling-localproxy"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Core library for AWS IoT Secure Tunneling local proxy"
+
+[dependencies]
