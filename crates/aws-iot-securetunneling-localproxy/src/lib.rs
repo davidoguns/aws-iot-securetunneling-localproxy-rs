@@ -8,9 +8,9 @@ pub fn version() -> &'static str {
     env!("CARGO_PKG_VERSION")
 }
 
-// Include generated source. This is not referencing OUT_DIR. Since we aren't
-// changing the generated source per build, this is acceptable, much simpler,
-// and kinder to various dev tools to check it in.
+// Include generated source, pushed into proto submodule. Use of "OUT_DIR"
+// can sometimes become stale depending on how cargo build caches things, and
+// may need editor/nvim to be restart if macro expansion starts to fail.
 pub mod proto {
     include!(concat!(env!("OUT_DIR"), "/com.amazonaws.iot.securedtunneling.rs"));
 }
