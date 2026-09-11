@@ -44,5 +44,6 @@ mod tests {
         assert_eq!(m.stream_id, 2);
         assert_eq!(m.service_id, "".to_string());
         assert_eq!(m.ignorable, false);
+        assert_eq!(m.connection_id, 0);
     }
 }
