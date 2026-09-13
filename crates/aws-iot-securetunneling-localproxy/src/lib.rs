@@ -8,7 +8,7 @@ pub fn version() -> &'static str {
     env!("CARGO_PKG_VERSION")
 }
 
-// Include generated source, pushed into proto submodule. Use of "OUT_DIR"
+// Include generated source, pushed into proto submodule. Use of OUT_DIR
 // can sometimes become stale depending on how cargo build caches things, and
 // may need editor/nvim to be restart if macro expansion starts to fail.
 pub mod proto {
@@ -22,7 +22,6 @@ pub mod proto {
 
             // TODO: why aren't these fields optional?
             let m = Message {
-                // r#type: proto::message::Type::from_str_name("StreamStart").unwrap(),
                 r#type: message::Type::StreamStart as i32,
                 stream_id: 2,
                 ignorable: false,
