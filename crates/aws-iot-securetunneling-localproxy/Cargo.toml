@@ -8,3 +8,8 @@ repository.workspace = true
 description = "Core library for AWS IoT Secure Tunneling local proxy"
 
 [dependencies]
+prost = "0.14.x"
+prost-types = "0.14.x"
+
+[build-dependencies]
+prost-build = "0.14.x"
